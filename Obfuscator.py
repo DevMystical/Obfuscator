@@ -244,8 +244,6 @@ def obfuscate(code):
     output += f"{ast_wrapper_class_id}.{a_walk_pickled_objects}();"
 
     output += f"{utility_class_id}.{u_getbuiltin}({utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[{create_number(5)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_hex}())[{create_number(2)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[{create_number(5)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[{create_number(0)}])({utility_class_id}.{u_getbuiltin}({utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[:{create_number(4)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_iter}())[{create_number(0)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_class}([]))[{create_number(0)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[{create_number(5)}])({built_ast_id},{utility_class_id}.{u_file}(),{utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[{create_number(5)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_hex}())[{create_number(2)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[{create_number(5)}]+{utility_class_id}.{u_name}({utility_class_id}.{u_complex}())[{create_number(0)}]))"
-    
-    # TODO utility class subclassesw
 
     return output
 
