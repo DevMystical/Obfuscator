@@ -228,7 +228,7 @@ def obfuscate(code):
         for path_list in pathlist_subclass:
             list_items = [ast_obj_filler_class_id if type(item) == ASTObj else (f"{char_storage_class_id}.{c_subclass_pathstrings}.{string_method_mapping[item]}()" if type(item) == str else f"{char_storage_class_id}.{c_subclass_pathints}.{integer_method_mapping[item]}") for item in path_list]
             string_content = "[" + ",".join(list_items) + "]"
-            individual_pathlist_strings.append(f"{pathlist_method_mapping[str(path_list)][-1]} = lambda:{string_content}")
+            individual_pathlist_strings.append(f"{pathlist_method_mapping[str(path_list)][-1]}=lambda:{string_content}")
         
         pathlist_subclass_list[index] += ",".join(random.sample(individual_pathlist_strings, len(individual_pathlist_strings))) + ")])"
     char_storage_subclasses[4] += ",".join(random.sample(pathlist_subclass_list, len(pathlist_subclass_list))) + ")])"
